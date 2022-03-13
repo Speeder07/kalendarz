@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222831;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  width: 95vw;
+  height: 95vh;
+}
+
+#year {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+#y_container {
+  height: 80%;
+}
+
+#y_name {
+  margin-left: 10%;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #eeeeee;
+}
+
+.month {
+  width: 15%;
+  height: 40%;
+  background-color: #2d4059;
+  transition: 2s;
+  display: inline-block;
+  margin: 5px;
+  overflow: auto;
+}
+
+.month.fullscrean {
+  width: 100%;
+  height: 100vh;
+}
+
+.m_name {
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 30px;
+  color: #eeeeee;
+  flex: 0 1 auto;
+}
+
+.m_content {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.m_center {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  flex: 1 1 auto;
+}
+
+.m_center > .day {
+  margin: 2px;
+  min-height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vh;
+  color: #eeeeee;
+  transition: background-color 0.2s;
+}
+
+.m_center > .day:hover {
+  background-color: #44556c;
+}
+
+.day.targeted {
+  background-color: #ff5722;
+  font-weight: 700;
+}
+
+.day.targeted:hover {
+  background-color: #c8431a;
+}
+
+.flexC {
+  display: flex;
+  justify-content: center;
+}
+
+.day_form {
+  width: 100%;
+  height: 100%;
+}
+
+.day_form > div {
+  width: 100%;
+  height: 100%;
+}
+
+.day_form textarea {
+  flex: 1 1 auto;
+  resize: none;
+  background-color: #c8431a;
+  overflow: auto;
+  border: 1px solid #2d4059;
+  outline: none;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.flex_grow {
+  display: flex;
+  flex-flow: column;
+}
